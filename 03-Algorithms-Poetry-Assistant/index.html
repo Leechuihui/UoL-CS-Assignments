@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Poetry Assistant</h1>
+            <p class="subtitle">Poetry Assistant - Providing inspiration for your poetry creation</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <input type="text" id="wordInput" placeholder="Enter a word, e.g.: cat" autocomplete="off"
+                        onkeypress="if(event.key === 'Enter') handleSearch()">
+                    <button id="searchBtn" onclick="handleSearch()">
+                        <span>🔍 Find Rhyming Words</span>
+                    </button>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn-secondary" onclick="handleAlliteration()">
+                        <span>✨ Alliteration Assistant</span>
+                    </button>
+                    <button class="btn-secondary" onclick="handleSyllableCount()">
+                        <span>📏 Syllable Count</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="results" class="results-container">
+                <div class="empty-state">
+                    <div class="empty-state-icon">✍️</div>
+                    <p>Enter a word to start finding rhyming words</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Poetry creation assistant based on Trie tree and rhyme mapping algorithm</p>
+        </footer>
+    </div>
+
+    <script src="poetry-assistant.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
