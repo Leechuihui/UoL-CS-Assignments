@@ -1,31 +1,31 @@
-# 伦敦大学计算机科学作业合集
+# University of London Computer Science Coursework
 
-本仓库集成伦敦大学计算机科学本科学位课程的编程作业，按课程分类整理。
+This repository collects my programming coursework from the University of London BSc Computer Science degree, organized by module.
 
-## 课程作业
+## Coursework
 
-| # | 课程 | 作业 | 说明 |
-|---|------|------|------|
-| 1 | Programming 1 | [Black Cat Granary Saga](01-Programming1-Black-Cat-Granary-Saga/) | p5.js 2D 平台冒险游戏，[在线试玩](https://leechuihui.github.io/Programing-1--final-exam-report-game_project_6/) |
-| 2 | Programming 2 | [Galaxy Audio Visualizer](02-Programming2-Galaxy-Audio-Visualizer/) | Web Audio API 音频可视化播放器，[在线体验](https://leechuihui.github.io/programing2-final-exam-report-galaxy-audio-visualizer/) |
-| 3 | Algorithms and Data Structures | [Poetry Assistant](03-Algorithms-Poetry-Assistant/) | 押韵、头韵、音节查询工具（Trie 树 + 哈希表） |
-| 4 | Introduction to Computer Programming | [Case 101: Lina Lovelace](04-IntroToProgramming-Case101-Lina-Lovelace/) | 编程导论侦探案例作业 |
-| 5 | CM2025 Computer Security | [Secure by Design 期中项目](05-CM2025-Computer-Security-Midterm/) | 威胁情报分析、SQL 注入修复、AES 加密实现 |
+| # | Module | Assignment | Description |
+|---|--------|-----------|-------------|
+| 1 | Programming 1 | [Black Cat Granary Saga](01-Programming1-Black-Cat-Granary-Saga/) | 2D platformer game built with p5.js, [play online](https://leechuihui.github.io/Programing-1--final-exam-report-game_project_6/) |
+| 2 | Programming 2 | [Galaxy Audio Visualizer](02-Programming2-Galaxy-Audio-Visualizer/) | Audio visualizer player using Web Audio API, [try online](https://leechuihui.github.io/programing2-final-exam-report-galaxy-audio-visualizer/) |
+| 3 | Algorithms and Data Structures | [Poetry Assistant](03-Algorithms-Poetry-Assistant/) | Rhyme, alliteration and syllable lookup tool (Trie + hash map) |
+| 4 | Introduction to Computer Programming | [Case 101: Lina Lovelace](04-IntroToProgramming-Case101-Lina-Lovelace/) | Detective case assignment from the intro module |
+| 5 | CM2025 Computer Security | [Secure by Design Midterm](05-CM2025-Computer-Security-Midterm/) | Threat intelligence analysis, SQL injection fix, AES implementation |
 
-## 目录结构
+## Structure
 
 ```
 UoL-CS-Assignments/
-├── 01-Programming1-Black-Cat-Granary-Saga/      游戏 + 报告文档
-├── 02-Programming2-Galaxy-Audio-Visualizer/     播放器 + 项目报告
-├── 03-Algorithms-Poetry-Assistant/              代码 + 题解
-├── 04-IntroToProgramming-Case101-Lina-Lovelace/ 案例题目与源码
-└── 05-CM2025-Computer-Security-Midterm/         报告 PDF + Python 代码
+├── 01-Programming1-Black-Cat-Granary-Saga/      game + report docs
+├── 02-Programming2-Galaxy-Audio-Visualizer/     player + project report
+├── 03-Algorithms-Poetry-Assistant/              code + answers
+├── 04-IntroToProgramming-Case101-Lina-Lovelace/ case briefs + source
+└── 05-CM2025-Computer-Security-Midterm/         report PDF + Python code
 ```
 
-各文件夹内的 README.md 有每个作业的详细说明。
+Each folder contains its own README with details.
 
-## 说明
+## Notes
 
-- 本仓库为归档集成，完整开发历史见各原始仓库。
-- 原仓库中两个 Windows 不兼容文件名已修复，全平台可正常克隆。
+- This is an archive; full commit history lives in the original repositories.
+- Two Windows-incompatible filenames from the original repos were fixed, so this repo clones cleanly on all platforms.
