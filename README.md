@@ -19,6 +19,7 @@
 | 2 | **Programming 2**<br>编程 2（期末大作业） | 🌌 [Galaxy Audio Visualizer 银河音频可视化播放器](02-Programming2-Galaxy-Audio-Visualizer/) — 专业音频可视化播放器 | p5.js · Web Audio API · FFT 频谱分析 | ▶️ [在线体验](https://leechuihui.github.io/programing2-final-exam-report-galaxy-audio-visualizer/) |
 | 3 | **Algorithms and Data Structures**<br>算法与数据结构 | ✒️ [Poetry Assistant 诗歌创作助手](03-Algorithms-Poetry-Assistant/) — 押韵/头韵/音节查询工具 | JavaScript · Trie 树 · 哈希表 | — |
 | 4 | **Introduction to Computer Programming**<br>计算机编程导论 | 🔍 [Case 101: The Case of Lina Lovelace](04-IntroToProgramming-Case101-Lina-Lovelace/) — 图像识别侦探案例 | p5.js · 坐标绘图 | — |
+| 5 | **CM2025 Computer Security**<br>计算机安全（期中大作业） | 🛡️ [Secure by Design 期中项目](05-CM2025-Computer-Security-Midterm/) — 威胁情报分析 + 漏洞修复 + AES 密码学 | Python · NIST CSF · SQL 注入修复 · PyCryptodome | 📄 [报告 PDF](05-CM2025-Computer-Security-Midterm/CM2025-Midterm-Report.pdf) · [博客解读](https://blog.bgcbuilding.com/article.html?id=cm2025-midterm) |
 
 ---
 
@@ -50,10 +51,19 @@ UoL-CS-Assignments/
 │   ├── poetry-assistant.js                      ← Trie 树 + 押韵算法实现
 │   └── app.js / index.html                      ← Web 界面
 │
-└── 04-IntroToProgramming-Case101-Lina-Lovelace/ ← 编程导论作业
-    ├── Case - 101 - The case of Lina Lovelace.md ← 案例 Stage 2 题目与解答
-    ├── Introduction to Computer Programming...   ← Stage 1 - Central Station
-    └── 101-0-93175851-7699534 下午10.02.25/      ← p5.js 项目源码
+├── 04-IntroToProgramming-Case101-Lina-Lovelace/ ← 编程导论作业
+│   ├── Case - 101 - The case of Lina Lovelace.md ← 案例 Stage 2 题目与解答
+│   ├── Introduction to Computer Programming...   ← Stage 1 - Central Station
+│   └── 101-0-93175851-7699534 下午10.02.25/      ← p5.js 项目源码
+│
+└── 05-CM2025-Computer-Security-Midterm/         ← 计算机安全期中大作业
+    ├── README.md                                ← 项目详情
+    ├── CM2025-Midterm-Report.pdf                ← 期中报告 PDF ⭐
+    └── code/                                    ← Python 源码
+        ├── vulnerable_login.py                  ← SQL 注入漏洞演示脚本
+        ├── secure_login.py                      ← 参数化查询修复版
+        ├── aes_crypto.py                        ← AES-256-CBC 加解密工具
+        └── secure_config.py / init_test_db.py …
 ```
 
 ---
@@ -105,11 +115,22 @@ UoL-CS-Assignments/
 - ✅ 精确坐标计算与图形绘制
 - 🔗 原始仓库：[-Online-Courses-Learning](https://github.com/Leechuihui/-Online-Courses-Learning)
 
+### 5️⃣ CM2025 Computer Security — Secure by Design 🛡️
+**计算机安全期中大作业**
+
+涵盖威胁情报分析、操作系统安全、代码级漏洞修复与实用密码学的综合安全项目。
+
+- ✅ **Part A 威胁情报**：NIST CSF 框架分析 MOVEit 零日漏洞（CVE-2023-34362）与朝鲜 APT 供应链攻击
+- ✅ **Part B 漏洞修复**：SQL 注入 → 参数化查询；硬编码凭据 → 环境变量
+- ✅ **Part C 密码学实践**：PyCryptodome 实现 AES-256-CBC（PKCS7 + 随机 IV）
+- 📄 报告：[`CM2025-Midterm-Report.pdf`](05-CM2025-Computer-Security-Midterm/CM2025-Midterm-Report.pdf) · [博客中英双语解读](https://blog.bgcbuilding.com/article.html?id=cm2025-midterm)
+- 💻 代码：[`code/`](05-CM2025-Computer-Security-Midterm/code/)（含漏洞版与修复版登录脚本对比）
+
 ---
 
 ## 🚀 如何运行 | How to Run
 
-所有项目均为纯前端 p5.js 项目，无需安装依赖：
+**作业 1–4** 为纯前端 p5.js 项目，无需安装依赖：
 
 ```bash
 # 方式一：直接打开
@@ -121,6 +142,15 @@ python -m http.server 8000
 # 浏览器访问 http://localhost:8000
 ```
 
+**作业 5（CM2025）** 为 Python 项目：
+
+```bash
+cd 05-CM2025-Computer-Security-Midterm/code
+pip install -r requirements.txt
+python init_test_db.py        # 初始化测试数据库
+python secure_login.py        # 查看漏洞修复效果
+```
+
 > 💡 在线演示无需下载，直接点击顶部导航表格中的「在线试玩 / 在线体验」链接。
 
 ---
@@ -130,3 +160,4 @@ python -m http.server 8000
 - 本仓库为**只读归档集成**，各作业的完整开发历史请访问对应的原始仓库。
 - 原仓库 `my-p5js-game` 为空仓库，未纳入本合集。
 - 集成时修复了原仓库中 2 个 Windows 不兼容的文件名（含 `|` 和 `:` 字符），并同步更新了代码中的引用，现在全平台均可正常克隆。
+- CM2025 作业来源：报告 PDF 来自[博客文章](https://blog.bgcbuilding.com/article.html?id=cm2025-midterm)，代码来自本地归档；已按安全最佳实践排除 `.env`、`users.db`、`venv/`（可用 `init_test_db.py` 重新生成测试库）。

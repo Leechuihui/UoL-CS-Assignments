@@ -1,0 +1,15 @@
+# .gitignore - CM2025 assignment code
+# Never commit real secrets (the lesson of this assignment!)
+.env
+
+# Regenerable test database: run `python init_test_db.py`
+users.db
+
+# Virtual environment & caches
+venv/
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
