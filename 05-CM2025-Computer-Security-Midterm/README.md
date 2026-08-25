@@ -24,15 +24,4 @@ code/
 └── .env.example          环境变量模板
 ```
 
-## 运行方式
-
-```bash
-cd code
-pip install -r requirements.txt
-python init_test_db.py        # 生成测试数据库
-python vulnerable_login.py    # 演示注入攻击成功（仅限学习）
-python secure_login.py        # 验证注入被拦截
-python aes_crypto.py          # 加解密演示
-```
-
 仅供课程学习与授权实验环境使用。

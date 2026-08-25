@@ -25,24 +25,6 @@ UoL-CS-Assignments/
 
 各文件夹内的 README.md 有每个作业的详细说明。
 
-## 运行方式
-
-作业 1–4 为纯前端项目，打开各目录下的 index.html 即可，或：
-
-```bash
-cd 01-Programming1-Black-Cat-Granary-Saga
-python -m http.server 8000
-```
-
-作业 5 为 Python 项目：
-
-```bash
-cd 05-CM2025-Computer-Security-Midterm/code
-pip install -r requirements.txt
-python init_test_db.py
-python secure_login.py
-```
-
 ## 说明
 
 - 本仓库为归档集成，完整开发历史见各原始仓库。
