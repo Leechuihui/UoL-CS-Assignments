@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # University of London Computer Science Coursework
 
 This repository collects my programming coursework from the University of London BSc Computer Science degree, organized by module.
